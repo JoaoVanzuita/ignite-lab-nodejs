@@ -4,7 +4,7 @@ export class CreateNotificationBody {
 
   @IsNotEmpty()
   @IsUUID()
-    recipientId: number
+    recipientId: string
 
   @IsNotEmpty()
     category: string

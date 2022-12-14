@@ -11,7 +11,7 @@ datasource db {
 }
 
 model Notification {
-  id          String       @id
+  id          String    @id
   recipientId String
   content     String
   category    String

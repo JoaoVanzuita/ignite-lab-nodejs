@@ -1,9 +1,9 @@
-import { IsNotEmpty, IsNumber, Length } from 'class-validator'
+import { IsNotEmpty, IsUUID, Length } from 'class-validator'
 
 export class CreateNotificationBody {
 
   @IsNotEmpty()
-  @IsNumber()
+  @IsUUID()
     recipientId: number
 
   @IsNotEmpty()

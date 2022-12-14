@@ -11,8 +11,8 @@ datasource db {
 }
 
 model Notification {
-  id          Int       @id @default(autoincrement())
-  recipientId Int
+  id          String       @id
+  recipientId String
   content     String
   category    String
   createdAt   DateTime  @default(now())
